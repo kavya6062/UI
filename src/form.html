@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+			function validatethisform()
+		{
+			var now = document.test_form;
+			if(now.Music.checked || now.Cricket.checked || now.VideoGames.checked)
+			{} 
+			else 
+			{
+				alert("Select at least one option in Hobbies");
+				return false;
+			}
+		}
+	</script>
+</head>
+<body>
+		<form name="test_form" method="get" enctype="multipart/form-data">
+		<table>
+			<tr>
+				<td>
+					First Name:
+				</td>
+				<td>
+					<input type="textbox" name="fname" size="20" required>
+				</td>	
+			</tr>
+			<tr>
+				<td>
+					Last Name:
+				</td>
+				<td>
+					<input type="textbox" name="lname" size="20" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					UserID:
+				</td>
+				<td>
+					<input type="textbox" name="UserID" size="20" required pattern="[a-zA-Z0-9]+">
+				</td>
+				<td>
+				*No spaces or special characters
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password:
+				</td>
+				<td>
+					<input type="Password" name="Password" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Country:
+				</td>
+				<td>
+					<select name="Country" required>
+						<option></option>
+						<option value="Australia"> Australia</option>
+						<option value="Bangladesh"> Bangladesh</option>
+						<option value="Canada"> Canada</option>
+						<option value="India"> India</option>
+						<option value="United Sttates"> United States</option>
+					</select>	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Hobbies:
+				</td>
+				<td>
+						<input type="checkbox" name="Music"> Music
+						<input type="checkbox" name="Cricket"> Cricket
+						<input type="checkbox" name="VideoGames"> VideoGames
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="Submit" value="Submit" onclick="validatethisform();">
+				</td>
+			</tr>
+		</table>
+	</form>	
+</body>
+</html>
+			

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Student Application Form </title>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        body 
+        {
+            text-align:center;
+            background-color: #fff999;
+        }
+        form
+        {   
+            width: 900px;
+            padding: 5px;
+            display: block;
+            text-align: left;
+            margin-left: auto;
+        }
+        h1
+        {
+            color: #234553;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="registration" method="get">
+        <div class="Container-fluid">
+            <div class="row">
+                <div class="col-md-5">
+                    <h1>Student Registration</h1>
+                </div>    
+            </div>
+            <br/>    
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" name="fname" id="txt-fname" placeholder="First Name" required>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" name="lname" id="txt-lname" placeholder="Last Name" required>
+                </div>    
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text" class="form-control" name="email" id="txt-email" placeholder="E-mail" required>
+                </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" name="phone" id="num" placeholder="Phone Number" maxlength="15"  required>
+                </div>     
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="password" class="form-control" name="password" id="pwd" placeholder="Password" required>
+                </div>    
+            </div> 
+            <br/>
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="password" class="form-control" id="pwd2" placeholder="Confirm Password" required>
+                </div>    
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-5">
+                    <select name="Program" id="pgm" style="width: 200px">
+                        <option></option>
+                        <option>Graduate</option>
+                        <option>Under Graduate</option>
+                    </select>    
+                </div>    
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-5">
+                    <select name="Course" id="course" style="width: 200px">
+                        <option></option>
+                        <option>Computer Science</option>
+                        <option>Communications</option>
+                        <option>Industrial Engineering</option>
+                        <option>Psychology</option>
+                    </select>    
+                </div>    
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-3">
+                    <button type="Submit" value="Submit">Submit</button>
+                </div>    
+            </div>   
+        </div>
+    </form>    
+</body>
+</html>
